@@ -1,6 +1,6 @@
 {
     "variables": {
-        "cloud_token": "wJanT6QyvR9hKw.atlasv1.c6ItzcRyFGOflStD8ydft9jozbN86rmk4vyj8dmOYaXibiLqSLiSCLbmSV7qEnzMB0E",
+        "cloud_token": "{{user `vagrant_cloud_token`}}",
         "version": "0.8"
     },
     "builders": [{

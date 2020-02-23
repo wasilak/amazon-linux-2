@@ -51,3 +51,4 @@ packer_cache/
 # End of https://www.gitignore.io/api/macos,packer,visualstudiocode
 
 output-vagrant/
+variables.json
