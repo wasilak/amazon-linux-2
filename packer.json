@@ -1,0 +1,23 @@
+{
+    "variables": {
+        "cloud_token": "wJanT6QyvR9hKw.atlasv1.c6ItzcRyFGOflStD8ydft9jozbN86rmk4vyj8dmOYaXibiLqSLiSCLbmSV7qEnzMB0E",
+        "version": "0.8"
+    },
+    "builders": [{
+        "communicator": "ssh",
+        "source_path": "wasilak/amazon-linux-2",
+        "box_name": "wasilak/amazon-linux-2",
+        "box_version": "0.7",
+        "provider": "virtualbox",
+        "type": "vagrant",
+        "ssh_username": "vagrant",
+        "ssh_password": "vagrant"
+    }],
+    "post-processors": [{
+        "type": "vagrant-cloud",
+        "box_tag": "wasilak/amazon-linux-2",
+        "access_token": "{{user `cloud_token`}}",
+        "version": "{{user `version`}}",
+        "version_description": ""
+    }]
+}
